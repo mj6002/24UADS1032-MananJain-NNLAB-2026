@@ -1,0 +1,49 @@
+
+============================================================
+  EXPERIMENT 1: PERCEPTRON LEARNING ALGORITHM
+============================================================
+
+[1] Training Perceptron for NAND Gate...
+  Converged at epoch 13
+
+==================================================
+  NAND Gate Evaluation
+==================================================
+  Final Weights (bias, w1, w2): [ 0.58939898 -0.16299728 -0.42647969]
+  Training Epochs: 13
+
+  Input1   Input2   Expected   Predicted  Correct 
+  --------------------------------------------
+  0        0        1          1          Y       
+  0        1        1          1          Y       
+  1        0        1          1          Y       
+  1        1        0          0          Y       
+
+  Accuracy: 100.0% (4/4)
+
+[2] Training Perceptron for XOR Gate...
+
+==================================================
+  XOR Gate Evaluation
+==================================================
+  Final Weights (bias, w1, w2): [ 0.08693278 -0.17255373 -0.07937479]
+  Training Epochs: 100
+
+  Input1   Input2   Expected   Predicted  Correct 
+  --------------------------------------------
+  0        0        0          1          N       
+  0        1        1          1          Y       
+  1        0        1          0          N       
+  1        1        0          0          Y       
+
+  Accuracy: 50.0% (2/4)
+
+--- STDERR ---
+d:\NN_LAB\Exp1_Perceptron_Learning_Algorithm\perceptron.py:119: UserWarning: color is redundantly defined by the 'color' keyword argument and the fmt string "b-o" (-> color='b'). The keyword argument will take precedence.
+  ax.plot(range(1, len(error_history) + 1), error_history, 'b-o',
+Traceback (most recent call last):
+  File "d:\NN_LAB\Exp1_Perceptron_Learning_Algorithm\perceptron.py", line 177, in <module>
+    print(f"\n[\u2713] Plots saved to 'perceptron_results.png'")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>

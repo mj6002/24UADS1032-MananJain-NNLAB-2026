@@ -1,0 +1,5 @@
+Write a Python script using NumPy and Matplotlib to simulate the Perceptron Learning Algorithm. Ensure the following:
+1. Implement a single-layer perceptron class with step activation.
+2. Evaluate its performance on both NAND and XOR truth tables.
+3. Plot the decision boundaries for both gates and show the training error curves across epochs.
+4. Include a printout summarizing that perceptrons can learn linearly separable functions (NAND) but not non-linear ones (XOR).
