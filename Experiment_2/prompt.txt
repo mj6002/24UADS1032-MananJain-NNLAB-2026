@@ -1,0 +1,5 @@
+Write a Python script from scratch using NumPy to implement a Multi-Layer Perceptron (MLP) with one hidden layer to solve the XOR Boolean function. Ensure the following:
+1. Implement feedforward and backpropagation manually using the Sigmoid activation function.
+2. Train the network on the XOR truth table for 10000 epochs.
+3. Output the final predictions to demonstrate it successfully learned XOR.
+4. Plot the training loss curve, the decision boundary, and optionally visualize the network architecture.

@@ -1,0 +1,36 @@
+
+============================================================
+  EXPERIMENT 2: MULTI-LAYER PERCEPTRON FOR XOR
+============================================================
+
+[1] Network Architecture:
+  Input Layer:  2 neurons
+  Hidden Layer: 4 neurons (Sigmoid activation)
+  Output Layer: 1 neuron  (Sigmoid activation)
+  Learning Rate: 0.5
+  Epochs: 10000
+
+[2] Training MLP...
+  Epoch  1000/10000, Loss: 0.022366
+  Epoch  2000/10000, Loss: 0.002850
+  Epoch  3000/10000, Loss: 0.001403
+  Epoch  4000/10000, Loss: 0.000916
+  Epoch  5000/10000, Loss: 0.000676
+  Epoch  6000/10000, Loss: 0.000534
+  Epoch  7000/10000, Loss: 0.000440
+  Epoch  8000/10000, Loss: 0.000374
+  Epoch  9000/10000, Loss: 0.000325
+  Epoch 10000/10000, Loss: 0.000287
+
+[3] Evaluation Results:
+  ==================================================
+  Input1   Input2   Expected   Raw Output   Predicted  Correct 
+  --------------------------------------------------------
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "d:\NN_LAB\Exp2_Multi_Layer_Perceptron\mlp_xor.py", line 135, in <module>
+    print(f"  {X[i][0]:<8} {X[i][1]:<8} {expected:<10} {predictions_raw[i][0]:<12.6f} {pred:<10} {is_correct:<8}")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 55: character maps to <undefined>
