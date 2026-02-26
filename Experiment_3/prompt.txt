@@ -1,0 +1,5 @@
+Write a Python script to implement a Three-Layer Neural Network for MNIST digit classification strictly using pure TensorFlow operations (`tf.Variable`, `tf.GradientTape`), without using the high-level Keras APIs (`tf.keras.layers`, `tf.keras.models`). Ensure the following:
+1. Architecture config: 784 input size, 256 neurons in hidden layer 1 (ReLU), 128 neurons in hidden layer 2 (ReLU), and 10 output logits.
+2. Implement feed-forward and back-propagation manually.
+3. Use `tf.optimizers.Adam` for optimizing the weights.
+4. Plot the training loss curve, train/test accuracy over epochs, and plot a confusion matrix of the final test predictions.
