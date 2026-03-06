@@ -1,0 +1,5 @@
+Write a Python script using TensorFlow and Keras to perform Hyperparameter Tuning for a Back-Propagation Neural Network (BPNN) on the MNIST dataset. Your script should:
+1. Define a configurable three-layer Dense neural network model.
+2. Conduct repeated training experiments to show the effect of tweaking: Activation Functions, Hidden Layer Size, Learning Rate, Batch Size, and Number of Epochs.
+3. Create a comprehensive summary table in the console detailing the accuracy of each configuration.
+4. Plot multi-figure visualizations (e.g. subplots) comparing the testing accuracy over epochs for the different configurations.
