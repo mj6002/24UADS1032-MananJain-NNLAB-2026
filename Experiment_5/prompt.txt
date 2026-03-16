@@ -1,0 +1,5 @@
+Write a Python script using TensorFlow and Keras to build and train a Convolutional Neural Network (CNN) for the Fashion MNIST dataset. Your script should:
+1. Provide a base CNN architecture with proper convolutional, pooling, and dense layers.
+2. Train multiple variants of the model to demonstrate the effect of: Filter Size (e.g., 3x3, 5x5, 7x7), Regularization (Dropout, BatchNorm, L2), Batch Size, and Optimization Algorithms (Adam, SGD, RMSprop, Adagrad).
+3. Visualize the comparison of test accuracies for each variation across epochs in a grid of subplots.
+4. Save the best model and plot a final confusion matrix for it.

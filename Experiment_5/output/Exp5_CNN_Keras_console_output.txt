@@ -1,0 +1,58 @@
+
+[1] Fashion MNIST Data Loaded:
+  Training samples: 100
+  Test samples:     20
+
+======================================================================
+  EXPERIMENT 5: CNN FOR FASHION MNIST
+======================================================================
+
+======================================================================
+  5.1: Effect of Filter Size (Dropout=0, Batch=64, Opt=Adam, Epochs=5)
+======================================================================
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=5.00%  (3.2s)
+  Filter=5x5  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=0.00%  (2.9s)
+  Filter=7x7  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=0.00%  (2.1s)
+
+======================================================================
+  5.2: Effect of Regularization (Filter=3, Batch=64, Opt=Adam, Epochs=5)
+======================================================================
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=5.00%  (1.8s)
+  Filter=3x3  Drop=0.3  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=10.00%  (2.1s)
+  Filter=3x3  Drop=0.5  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=0.00%  (1.8s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=True  WD=0.0  -> Acc=15.00%  (3.2s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0001  -> Acc=10.00%  (2.2s)
+
+======================================================================
+  5.3: Effect of Batch Size (Filter=3, Dropout=0, Opt=Adam, Epochs=5)
+======================================================================
+  Filter=3x3  Drop=0.0  Batch=32  Opt=adam      BN=False  WD=0.0  -> Acc=10.00%  (1.8s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=0.00%  (1.7s)
+  Filter=3x3  Drop=0.0  Batch=128  Opt=adam      BN=False  WD=0.0  -> Acc=0.00%  (1.8s)
+
+======================================================================
+  5.4: Effect of Optimizer (Filter=3, Dropout=0, Batch=64, Epochs=5)
+======================================================================
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adam      BN=False  WD=0.0  -> Acc=10.00%  (1.9s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=sgd       BN=False  WD=0.0  -> Acc=5.00%  (1.9s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=rmsprop   BN=False  WD=0.0  -> Acc=0.00%  (1.6s)
+  Filter=3x3  Drop=0.0  Batch=64  Opt=adagrad   BN=False  WD=0.0  -> Acc=10.00%  (1.5s)
+
+--- STDERR ---
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773435500.995533    6096 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773435509.246454    6096 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Python310\lib\site-packages\keras\src\layers\convolutional\base_conv.py:113: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+I0000 00:00:1773435514.408818    6096 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000019B3134AF80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000019B33839120> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Traceback (most recent call last):
+  File "d:\NN_LAB\Exp5_CNN_Keras\cnn_fashion_mnist.py", line 226, in <module>
+    print(f"\n[\u2713] Plots saved to 'cnn_fashion_mnist_results.png'")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>
