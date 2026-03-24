@@ -1,0 +1,39 @@
+
+============================================================
+  EXPERIMENT 6: RNN FOR TIME SERIES PREDICTION
+============================================================
+
+[1] Generating sample time series dataset...
+  Time series length: 2000
+  Min value: -13.76
+  Max value: 14.70
+  Mean: 2.42
+  Sequence length: 50
+  Training sequences: 1560
+  Test sequences: 390
+
+[Training Simple RNN]
+  Parameters: 12,673
+
+[Training LSTM]
+  Parameters: 50,497
+
+[Training GRU]
+  Parameters: 37,889
+
+======================================================================
+  MODEL COMPARISON
+======================================================================
+  Model           MSE          MAE          R� Score     Time      
+  -------------------------------------------------------------
+  Simple RNN      0.6722       0.6625       0.9825       2.5       s
+  LSTM            0.6018       0.6331       0.9844       1.3       s
+  GRU             0.3763       0.4883       0.9902       3.8       s
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "d:\NN_LAB\Exp6_RNN_PyTorch\rnn_time_series.py", line 291, in <module>
+    print(f"\n[\u2713] Plots saved to 'rnn_time_series_results.png'")
+  File "C:\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 3: character maps to <undefined>

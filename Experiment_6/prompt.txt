@@ -1,0 +1,5 @@
+Write a Python script using PyTorch to implement and evaluate Recurrent Neural Networks (Simple RNN, LSTM, and GRU) for Time Series Prediction. Your script should:
+1. Generate a sample complex time series dataset (e.g., combining sinusoidal waves, trend, and noise) and split into training/testing sequences.
+2. Define PyTorch modules for Simple RNN, LSTM, and GRU.
+3. Train all three models and compute MSE, MAE, and R-squared score.
+4. Plot the original time series, compare the training and testing losses of the three models, and plot actual vs predicted curves for each model.
