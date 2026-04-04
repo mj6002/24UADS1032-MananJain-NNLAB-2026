@@ -1,0 +1,5 @@
+Write a Python script using PyTorch to perform Transfer Learning for a Medical Image Classification task (e.g., PathMNIST or a mock medical image dataset with 9 classes). Your script should:
+1. Load a pretrained ResNet18 model (`models.resnet18(weights=...)`).
+2. Freeze the early layers (conv1 through layer3) and replace the final fully connected layer to fit the required number of classes. Unfreeze `layer4` and the `fc` head for fine-tuning.
+3. Implement a proper training loop with a learning rate scheduler, optimization, and evaluation.
+4. Compute the final accuracy, print the classification report, and display visualizations including training loss, accuracy curves, confusion matrix, and a few sample medical images with their predicted vs actual labels.
